@@ -1,66 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Tiago Almeida | Portfolio</title>
+    <link rel="icon" href="images/website-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <header>
-    <h1>My Portfolio</h1>
-    <nav>
-      <a href="#about">About Me</a>
-      <a href="#projects">Projects</a>
-    </nav>
-  </header>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+        <a href="#welcome">Welcome</a>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        </nav>
+    </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hello! I'm a front-end developer with a passion for building interactive and accessible web applications. I enjoy turning ideas into reality with clean and efficient code.</p>
-  </section>
+    <section id="welcome">
+        <div class="welcome-inner">
+            <div class="welcome-content">
+            <h2>Welcome!</h2>
+            <p>
+                This is my personal portfolio — a space where I share the projects I've built,
+                the ideas I've explored, and the challenges I've overcome.
+            </p>
+            <p>
+                Curious about what I’ve worked on? Check out the <a href="#projects">Projects</a> section for a showcase of my selected work.
+                Want to know more about me as a developer and creator? The <a href="#about">About Me</a> section has all the details.
+            </p>
+            <p>
+                Thanks for stopping by — I hope you find something here that inspires or intrigues you!
+            </p>
+            </div>
+            <img src="images/welcome-robot.png" alt="Welcome" class="welcome-img" />
+        </div>
+    </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
 
-    <div id="filter-buttons">
-      <button onclick="filterProjects('all')">All</button>
-      <button onclick="filterProjects('html')">HTML</button>
-      <button onclick="filterProjects('react')">React</button>
-      <button onclick="filterProjects('javascript')">JavaScript</button>
-    </div>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>In work...</p>
+    </section>
 
-    <div class="project-grid">
-      <div class="project-card" data-tags="html javascript">
-        <h3>Portfolio Site</h3>
-        <p>A personal portfolio to showcase my work.</p>
-        <div class="tags"><span>HTML</span><span>JavaScript</span></div>
-        <a href="project.html?project=portfolio">View Project</a>
-      </div>
+    <section id="projects">
+        <h2>Projects</h2>
 
-      <div class="project-card" data-tags="react javascript">
-        <h3>Task Manager</h3>
-        <p>A to-do app built with React.</p>
-        <div class="tags"><span>React</span><span>JavaScript</span></div>
-        <a href="project.html?project=task-manager">View Project</a>
-      </div>
+        <div id="filter-buttons">
+        <button onclick="filterProjects('all')">All</button>
+        <button onclick="filterProjects('html')">HTML</button>
+        <button onclick="filterProjects('react')">React</button>
+        <button onclick="filterProjects('javascript')">JavaScript</button>
+        </div>
 
-      <div class="project-card" data-tags="html">
-        <h3>Landing Page</h3>
-        <p>A clean landing page for a product.</p>
-        <div class="tags"><span>HTML</span></div>
-        <a href="project.html?project=landing-page">View Project</a>
-      </div>
-    </div>
-  </section>
+        <div class="project-grid">
+        <div class="project-card" data-tags="html javascript">
+            <h3>Portfolio Site</h3>
+            <p>A personal portfolio to showcase my work.</p>
+            <div class="tags"><span>HTML</span><span>JavaScript</span></div>
+            <a href="project.html?project=portfolio">View Project</a>
+        </div>
 
-  <footer>
-    <h4>Contact Me</h4>
-    <p>Email: you@example.com</p>
-    <p>GitHub: <a href="https://github.com/yourhandle" target="_blank">yourhandle</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/yourhandle" target="_blank">yourhandle</a></p>
-  </footer>
+        <div class="project-card" data-tags="react javascript">
+            <h3>Task Manager</h3>
+            <p>A to-do app built with React.</p>
+            <div class="tags"><span>React</span><span>JavaScript</span></div>
+            <a href="project.html?project=task-manager">View Project</a>
+        </div>
 
-  <script src="script.js"></script>
+        <div class="project-card" data-tags="html">
+            <h3>Landing Page</h3>
+            <p>A clean landing page for a product.</p>
+            <div class="tags"><span>HTML</span></div>
+            <a href="project.html?project=landing-page">View Project</a>
+        </div>
+        </div>
+    </section>
+
+    <footer>
+        <h4>Contact Me</h4>
+        <p>Email: tiagojralmeida04@outlook.com</p>
+        <p>GitHub: <a href="https://github.com/TiagoJRAlmeida" target="_blank">TiagoJRAlmeida</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/tiago-almeida-540647249/" target="_blank">tiago-almeida-540647249</a></p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
