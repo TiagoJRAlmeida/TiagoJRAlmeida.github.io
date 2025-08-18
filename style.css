@@ -12,7 +12,7 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    padding: 0 20px;
+    padding: 0 0px;
     background-color: #f5f5f5;
 }
 
@@ -112,6 +112,138 @@ section {
     scroll-margin-top: var(--navbar-height);
 }
 
+#about h2 {
+    font-size: 2.2rem;
+    color: #1a237e;
+    letter-spacing: 1.2px;
+    font-weight: 800;
+    margin: 2.2rem 0 1rem 0;
+}
+
+#about .about-blocks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.6rem;
+    width: 90%;
+    max-width: 1100px;
+    padding: 2rem 2.25rem 2.5rem 2.25rem;
+    box-sizing: border-box;
+    margin-bottom: 3rem;
+}
+
+/* Generic card style for each about block */
+#about .about-blocks > div {
+    background: #fff;
+    border-radius: 14px;
+    padding: 1.2rem 1.4rem;
+    box-shadow: 0 6px 20px rgba(25, 37, 84, 0.06);
+    border: 1px solid #eef3fb;
+    transition: transform 0.18s, box-shadow 0.18s;
+    min-height: 130px;
+}
+#about .about-blocks > div:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 34px rgba(25, 37, 84, 0.10);
+}
+
+/* Quick Facts list */
+.about-summary ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 8px;
+}
+.about-summary li {
+    font-size: 0.98rem;
+    color: #2d3a4a;
+    display: flex;
+    gap: 8px;
+    align-items: baseline;
+}
+.about-summary li strong {
+    color: #0f172a;
+    min-width: 90px;
+    font-weight: 700;
+}
+
+/* Core Skills - make lists feel like badges */
+.about-skills p {
+    margin-bottom: 0.6rem;
+    color: #394b63;
+}
+.about-skills ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.about-skills li {
+    background: #f1f6ff;
+    color: #08306b;
+    padding: 8px 12px;
+    border-radius: 12px;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border: 1px solid rgba(3, 56, 122, 0.06);
+}
+
+/* Experience highlights */
+.about-experience ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 6px;
+}
+.about-experience li {
+    padding-left: 12px;
+    border-left: 3px solid #b5d0f7;
+    color: #2f3b4f;
+    font-size: 0.98rem;
+}
+
+/* Goals block - call to action style for contact link */
+.about-goals p {
+    color: #344155;
+    margin-bottom: 0.85rem;
+    line-height: 1.5;
+}
+.about-goals a {
+    color: #0078d7;
+    font-weight: 700;
+    text-decoration: none;
+}
+.about-goals a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive: single column on small screens */
+@media (max-width: 900px) {
+    #about .about-blocks {
+        grid-template-columns: 1fr;
+        padding: 1.2rem;
+        gap: 1rem;
+        width: 95%;
+    }
+    #about h2 {
+        margin-top: 1.2rem;
+    }
+}
+
+#projects-title {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 2.2rem;
+    color: #1a237e;
+    letter-spacing: 1.5px;
+    font-weight: 800;
+    margin-top: 60px;
+    scroll-margin-top: calc(var(--navbar-height) + 60px);
+}
+
 #projects-section {
     display: flex;
     align-items: flex-start;
@@ -120,9 +252,7 @@ section {
     margin: 0 auto;
     max-width: 1400px;
     box-sizing: border-box;
-    scroll-margin-top: var(--navbar-height);
 }
-
 #filters-box {
     background: #fff;
     box-shadow: 0 4px 24px rgba(60, 60, 60, 0.08);
@@ -133,11 +263,10 @@ section {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    margin-top: 9.9rem;
+    margin-top: 3.9rem;
     margin-bottom: 2rem;
     height: fit-content;
 }
-
 #filters-box h2 {
     font-size: 1.5rem;
     font-weight: 700;
@@ -146,7 +275,6 @@ section {
     text-align: left;
     letter-spacing: 1px;
 }
-
 .filter-category h3 {
     font-size: 1.15rem;
     font-weight: 600;
@@ -154,14 +282,12 @@ section {
     margin-bottom: 0.7rem;
     margin-top: 0;
 }
-
 .filter-group {
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-bottom: 0;
 }
-
 .filter-group label {
     font-size: 1rem;
     font-weight: 500;
@@ -176,18 +302,15 @@ section {
     display: flex;
     align-items: center;
 }
-
 .filter-group label:hover {
     background: #d0e2fa;
 }
-
 .filter-group input[type="checkbox"] {
     margin-right: 10px;
     accent-color: #0078d7;
     transform: scale(1.15);
     vertical-align: middle;
 }
-
 #clear-filters {
     margin-top: 10px;
     padding: 8px 18px;

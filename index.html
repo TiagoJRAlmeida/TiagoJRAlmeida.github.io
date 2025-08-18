@@ -13,7 +13,7 @@
         <div>
             <a href="#">Welcome</a>
             <a href="#about">About Me</a>
-            <a href="#projects-section">Projects</a>
+            <a href="#projects-title">Projects</a>
             <a href="#contacts">Contacts</a>
         </div>
     </nav>
@@ -23,7 +23,7 @@
             <div class="welcome-content">
             <h2>Welcome!</h2>
             <p>
-                This is my personal portfolio — a space where I share the projects I've built,
+                This is my personal portfolio, a space where I share the projects I've built,
                 the ideas I've explored, and the challenges I've overcome.
             </p>
             <p>
@@ -31,7 +31,7 @@
                 Want to know more about me as a developer and creator? The <a href="#about">About Me</a> section has all the details.
             </p>
             <p>
-                Thanks for stopping by — I hope you find something here that inspires or intrigues you!
+                Thanks for stopping by, I hope you find something here that inspires or intrigues you!
             </p>
             </div>
             <img src="images/welcome-robot.png" alt="Welcome" class="welcome-img" />
@@ -41,10 +41,57 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <p>In work...</p>
+
+        <div class="about-blocks">
+            <div class="about-summary">
+                <h3>Quick Facts</h3>
+                <ul>
+                    <li><strong>Name:</strong> Tiago Almeida</li>
+                    <li><strong>Age:</strong> 21 years old</li>
+                    <li><strong>Location:</strong> Aveiro, Portugal</li>
+                    <li><strong>Education:</strong> BSc in Computer Engineering</li>
+                    <li><strong>Experience:</strong> Academic projects & personal labs</li>
+                    <li><strong>Availability:</strong> Open to opportunities</li>
+                </ul>
+            </div>
+
+            <div class="about-skills">
+                <h3>Core Skills & Technologies</h3>
+                <p>Typical stack & focus areas I work with:</p>
+                <ul>
+                    <li>Languages: Python, Java, C, JavaScript, SQL, Bash</li>
+                    <li>Domains: Software Development, Networking, Cybersecurity, Linux, Data processing</li>
+                    <li>Tools & Concepts: Git, Docker, Wireshark, GNS3, VirtualBox, Burp Suite, NMAP</li>
+                </ul>
+            </div>
+
+            <div class="about-experience">
+                <h3>Selected Highlights</h3>
+                <ul>
+                    <li>Developed academic projects with digital systems on FPGAs (VHDL) with real-time visualization.</li>
+                    <li>Implemented data cleaning & clustering pipelines as part of academic projects standardization pipelines for data cleaning & clustering.</li>
+                    <li>Developed secure systems (RBAC, hybrid encryption, HMAC) and CLI tools for course projects and labs.</li>
+                    <li>Simulated networks and OS concepts for learning and demonstration projects.</li>
+                </ul>
+            </div>
+
+            <div class="about-goals">
+                <h3>What I'm Looking For</h3>
+                <p>
+                    As a recent graduate in Computer Engineering, I'm open to opportunities across different areas of technology.
+                    My current interests include Linux, system administration, security, IoT, cloud, DevOps, and automation.
+                    I'm eager to learn, explore, and grow in both familiar and new domains.
+                </p>
+                <p>
+                    If you'd like to collaborate, see my projects below or <a href="#contacts">contact me</a>.
+                </p>
+            </div>
+        </div>
     </section>
 
+    <h2 id="projects-title">Projects</h2>
     <section id="projects-section">
+
         <div id="filters-box">
             <h2>Filters</h2>
 
@@ -79,7 +126,6 @@
         </div>
 
         <div id="projects">
-            <h2>Projects</h2>
 
             <div class="project-grid">
                 <div class="project-card" data-tags="vhdl fpga hardware">
